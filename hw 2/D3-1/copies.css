@@ -1,0 +1,23 @@
+h1 {
+	color: olive;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+p {
+	color: blue;
+	font-family: Arial, Helvetica, Sans-Serif;
+}
+table {
+	font-family: Arial, Helvetica, Sans-Serif;
+	border-collapse: collapse;
+	width: 50%	
+}
+td, th{
+	border: 1px solid #dddddd;
+	text-align: left;
+	padding: 6px;
+	color: #black;
+}
+tr:nth-child(even) {
+	background-color: #ddddd5;
+	color: #ffffff;
+}

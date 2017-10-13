@@ -1,0 +1,67 @@
+<!DOCTYPE>
+<head>
+	<style>
+	table, tr, th{
+	    border: 1px solid black;
+	}
+	table {
+		border-collapse: collapse;
+	}
+	th, td {
+		padding: 10px;
+		border: 1px solid black;
+	}
+	th {
+		color: #000000;
+		background-color: #fffff5;
+	}
+	</style>
+	<title>Fitness Survey</title>
+	<meta charset="utf-8" />
+	
+</head>
+<body>
+	<form action="mailto:blabla@hotmail.com" method="post" enctype="text/plain">
+	
+	<table>
+	    <tr>
+	        <fieldset><legend>Do you belong to any gym ?</legend> 
+	        	<p>
+					<label class="radio-inline"><input type="radio" name="belong" value="Yes">Yes</label>
+					<label class="radio-inline"><input type="radio" name="belong" value="No">No</label>
+				</p>
+	        </fieldset>
+	    </tr>
+	    <tr>
+	        <fieldset><legend>How do you stay in shape?</legend>
+	        	<p>
+	        		<label class="checkbox"><input type="checkbox" name="shape" value="classes">Fitness Classes</label>
+	        		<label class="checkbox"><input type="checkbox" name="shape" value="Weights">Weights</label>
+	        		<label class="checkbox"><input type="checkbox" name="shape" value="jogging">Jogging</label>
+	        		<label class="checkbox"><input type="checkbox" name="shape" value="swimming">Swimming</label>
+	        		<label class="checkbox"><input type="checkbox" name="shape" value="others">Others</label>
+	        	</p>
+	        </fieldset>
+	    </tr>
+	    <tr>
+	        <fieldset><legend>How often do u exercise?</legend>
+				<p>
+					<label class="radio-inline"><input type="radio" name="often" value="1">Once a week</label>
+					<label class="radio-inline"><input type="radio" name="often" value="2">Twice a week</label>
+					<label class="radio-inline"><input type="radio" name="often" value="4">4-6 times a week</label>
+					<label class="radio-inline"><input type="radio" name="often" value="7">7 times a week</label>
+				</p></fieldset>
+	    </tr>
+	    <tr>
+	        <fieldset><legend>Why do you workout?</legend>
+        	<p>
+        		<label class="checkbox"><input type="checkbox" name="shape" value="enjoy">I enjoy it</label>
+        		<label class="checkbox"><input type="checkbox" name="shape" value="enjoy">I want to stay fit</label>
+        	</p></fieldset>
+	    </tr>
+	</table>
+	<p><button type="submit" name="id_list" val="1,2,3,4,5" >Submit Query</button> <button type="reset" name="id_list" val="1,2,3,4,5">Reset</button></p>
+	</form>
+
+</body>
+</html>
