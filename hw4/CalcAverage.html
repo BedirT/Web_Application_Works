@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculate Average</title>
+  <meta http-equiv="content-type" content="text/html;
+  charset=iso-8859-1" />
+
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var res;
+
+    function calcAvg() {
+      var num1 = parseInt(document.numt.num1.value);
+      var num2 = parseInt(document.numt.num2.value);
+      var num3 = parseInt(document.numt.num3.value);
+      var num4 = parseInt(document.numt.num4.value);
+      var num5 = parseInt(document.numt.num5.value);
+
+    function performCalc() {
+      res = (num1 + num2 + num3 + num1 + num1)/5.0;
+      return res;
+    }
+
+    res = performCalc();
+    document.numt.avgResult.value = res;
+    }
+    /* ]]> */
+  </script>
+</head>
+<body>
+    <h1>Calculating Averages</h1>
+    <p>Enter 5 values to calculated average: </p>
+    <form method="post" name="numt" action="">
+      <table>
+        <tr><td>Value 1 
+        <textarea name="num1" value="0" onchange="calcAvg()" > </textarea><br /> </td></tr>
+        
+        <tr><td>Value 2 
+        <textarea name="num2" value="0" onchange="calcAvg()" > </textarea><br /> </td></tr>
+        
+        <tr><td>Value 3 
+        <textarea name="num3" value="0" onchange="calcAvg()" ></textarea><br /> </td></tr>
+        
+        <tr><td>Value 4 
+        <textarea name="num4" value="0" onchange="calcAvg()" ></textarea><br /> </td></tr>
+        
+        <tr><td>Value 5 
+        <textarea name="num5" value="0" onchange="calcAvg()" ></textarea><br /></td>
+        </tr>
+        <tr><td>Average 
+        <textarea name="avgResult" value="0" ></textarea><br /> </td></tr>
+      </table>
+    </form>
+  </body>
+</html>

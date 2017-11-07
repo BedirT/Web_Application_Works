@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>BMI Calculator</title>
+<meta http-equiv="content-type" content="text/html;
+charset=iso-8859-1" />
+
+  <script type="text/javascript">
+    /* <![CDATA[ */
+    var BMI;
+
+    function calc_avg() {
+        var v1 = parseInt(document.numt.num1.value);
+        var v2 = parseInt(document.numt.num2.value);
+
+        function avg_calc() {
+            BMI = v1 * 703 / v2 * v2;
+
+            return BMI;
+        }
+
+        BMI = avg_calc();
+        document.numt.BMI.value = BMI;
+    }
+    /* ]]> */
+  </script>
+</head>
+<body>
+    <h1>Calculate average</h1>
+    <form method="post" name="numt" action="">
+      <table>
+        <tr>
+        <td>Weight: 
+        <textarea name="num1" value="0"> </textarea><br></td>
+        </tr>
+        <tr>
+        <td>Height: 
+        <textarea name="num2" value="0"> </textarea><br></td>
+        </tr>
+        <tr>
+        <td>BMI:
+        <textarea name="BMI" value="0"></textarea><br><br>
+        <input id="button1" type="button" value="Calculate average" onclick="calc_avg();" /></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

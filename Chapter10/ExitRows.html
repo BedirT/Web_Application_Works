@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exit Row Requirements</title>
+</head>
+<body>
+	<script type="text/javascript">
+		if(window.confirm("Are you under 15 years old?"))
+			document.write("<p>By federal law, children under aga 15 may not sit in emergency exit rows.</p>");
+		else if(!window.confirm("Are you capable of lifting 50 or more pounds?"))
+			document.write("<p>You must be able to lift 50 or more pounds to sit in an exit row.</p>");
+		else if(!window.confirm("Are you willing to assist the crew in the event of an emergency?"))
+			document.write("<p>To sit in an exit row, you must be willing to assist the crew in the event of an emergency.</p>");
+		else
+			document.write("<p>You meet the criteria for sitting in an exit row.</p>")
+	</script>
+</body>
+</html>
