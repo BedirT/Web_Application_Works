@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+
+<head>
+
+	<!--
+		Name:						Larry Rubald
+		Class:					CIT 152 (Web Scripting)
+		Date:						October 3, 2011
+		Assignment #:		4
+	-->
+
+	<title>Gosselin Greeting Cards</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+	<meta name="title" content="Gosselin Greeting Cards" />
+	<meta name="author" content="Larry Rubald" />
+	<meta name="description" content="Chapter 4, Exercise 4-5" />
+	<meta name="language" content="en" />
+	<meta name="keywords" content="Larry Rubald, CIT152, Chapter 4, Exercise 4-5, Gosselin Greeting Cards" />
+
+	<script type="text/javascript">
+		/* <![CDATA[ */
+			var cardWindow;
+			function showCard(linkTarget){
+				var propertyWidth=400;
+				var propertyHeight=350;
+				var winLeft = (screen.width-propertyWidth)/2;
+				var winTop = (screen.height-propertyHeight)/2;
+				var winOptions = "toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=no";
+				winOptions += ",width=" + propertyWidth;
+				winOptions += ",height=" + propertyHeight;
+				winOptions += ",left=" + winLeft;
+				winOptions += ",top=" + winTop;
+				cardWindow = window.open(linkTarget,"cardInfo",winOptions);
+				cardWindow.focus();
+			}
+		/* ]]> */
+	</script>
+
+</head>
+
+<body>
+	
+	<h1>Gosselin Greeting Cards</h1>
+	<h2>All Occasions</h2>
+	<hr/>
+	<p>
+		<a href="valentine.jpg" onclick="showCard('valentine.jpg');return false">Valentine's Day</a><br />
+		<a href="mothersday.jpg" onclick="showCard('mothersday.jpg');return false">Mother's Day</a><br />
+		<a href="halloween.jpg" onclick="showCard('halloween.jpg');return false">Halloween</a><br />
+		<a href="newyear.jpg" onclick="showCard('newyear.jpg');return false">New Year</a><br />
+		<a href="birthday.jpg" onclick="showCard('birthday.jpg');return false">Birthday</a><br />
+	</p>
+
+</body>
+
+</html>

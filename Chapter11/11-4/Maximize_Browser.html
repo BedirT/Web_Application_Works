@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Maximize Browser</title>
+	<script type="text/javascript">
+		/* <! [CDATA[ */
+		var maxWindow;
+		function createWindow() {
+			var winWidth = 300;
+			var winHeight = 100;
+			var winLeft = (screen.width - winWidth)/2;
+			var winTop = (screen.height - winHeight)/2;
+			var winOptions = ",width=" + winWidth;
+			winOptions += ",height=" + winHeight;
+			winOptions += ",left=" + winLeft;
+			winOptions += ",top=" + winTop;
+			maxWindow = window.open("MaxWindow.html","newWindow", winOptions);
+			maxWindow.focus();
+		}
+
+		function maximizeWindow() {
+
+            maxWindow.moveto(0,0);
+            maxWindow.resizeTo(screen.availWidth, screen.availHeight);
+            maxWindow.focus();
+		}
+		/* ]]> */
+	</script>
+</head>
+<body>
+	<form action="">
+		<p><input type="button" value="Create a new window" onclick= "createWindow();"/></p>
+		<p><input type="button" value="Max Window" onclick= "maximizeWindow();"/></p>
+	</form>
+</body>
+</html>
